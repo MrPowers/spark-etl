@@ -5,7 +5,7 @@ import com.github.mrpowers.spark.fast.tests.DataFrameComparer
 import com.github.mrpowers.spark.daria.sql.SparkSessionExt._
 import org.apache.spark.sql.types.{IntegerType, StringType}
 
-class EtlCollectionSpec
+class EtlDefinitionSpec
    extends FunSpec
     with SparkSessionTestWrapper
     with DataFrameComparer {
