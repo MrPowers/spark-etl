@@ -12,7 +12,7 @@ spark-etl is generic and can be molded to suit all ETL situations.  For example,
 
 ## Code example
 
-This snippet creates a DataFrame and writes it out as a CSV file in your the local filesystem.
+This snippet creates a DataFrame and writes it out as a CSV file in your local filesystem.
 
 ```scala
 val sourceDF = spark.createDF(
@@ -46,3 +46,8 @@ etlDefinition.process()
 ```
 
 In production applications, it's more likely that you'll use Spark DataFrame readers to create the `sourceDF` (e.g. `spark.read.parquet("some_s3_path")`).
+
+## Example production use case
+
+You can define a collection of ETL definitions in a Databricks notebook and create a Slack command that runs an EtlDefinition on command from Slack.
+
