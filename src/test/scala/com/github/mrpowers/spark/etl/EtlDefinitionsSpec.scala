@@ -25,11 +25,9 @@ class EtlDefinitionsSpec
       )
 
       val etlDefinition = new EtlDefinition(
-        name =  "example",
         sourceDF = sourceDF,
         transform = EtlHelpers.someTransform(),
-        write = EtlHelpers.someWriter(),
-        hidden = false
+        write = EtlHelpers.someWriter()
       )
 
       val etls = scala.collection.mutable.Map[String, EtlDefinition]("example" -> etlDefinition)

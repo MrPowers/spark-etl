@@ -25,11 +25,9 @@ class EtlDefinitionSpec
       )
 
       val etlDefinition = new EtlDefinition(
-        name =  "example",
         sourceDF = sourceDF,
         transform = EtlHelpers.someTransform(),
-        write = EtlHelpers.someWriter(),
-        hidden = false
+        write = EtlHelpers.someWriter()
       )
 
       etlDefinition.process()
