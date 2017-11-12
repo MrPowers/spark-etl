@@ -32,6 +32,8 @@ class EtlDefinitionsSpec
 
       val etls = scala.collection.mutable.Map[String, EtlDefinition]("example" -> etlDefinition)
 
+      etls += ("ex2" -> etlDefinition)
+
       etls("example").process()
 
     }
